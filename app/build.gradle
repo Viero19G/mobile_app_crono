@@ -37,12 +37,15 @@ dependencies {
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
 
     // Room para banco de dados local SQLite
-    implementation 'androidx.room:room-runtime:2.5.2' // Certifique-se de que essa versão é a mais recente
-    annotationProcessor 'androidx.room:room-compiler:2.5.2'
+
+    implementation 'androidx.room:room-runtime:2.4.2' // Versão mais recente
+    annotationProcessor 'androidx.room:room-compiler:2.4.2' // Para usar anotações no Room
+    implementation 'androidx.room:room-ktx:2.6.1' // Para usar ktx, se necessário
+
 
     // Lifecycle e LiveData
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.3.1'
-    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.7'
 
     // Biblioteca para CSV
     implementation 'com.opencsv:opencsv:5.2'

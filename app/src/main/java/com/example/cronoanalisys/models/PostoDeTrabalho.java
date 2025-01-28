@@ -1,6 +1,11 @@
 package com.example.cronoanalisys.models;
 
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
+@Entity(tableName = "posto_de_trabalho")
 public class PostoDeTrabalho {
+    @PrimaryKey(autoGenerate = true)
     private int id;
     private String nome;
     private String descricao;
